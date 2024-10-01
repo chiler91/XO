@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh; /* Adjust the height to account for the 3% upward movement */
+    background-color: #f0f0f0;
+    background-image: url('background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column;
+    margin-top: -3%; /* Move everything up by 3% */
+}
+
+h1 {
+    font-family: 'Cursive', 'Comic Sans MS', sans-serif;
+    color: #fff;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Game Board */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cell:hover {
+    background-color: #f1f1f1;
+}
+
+/* Game Status */
+.game-status {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Scoreboard */
+.scoreboard {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-align: right;
+}
+
+.scoreboard p {
+    color: white; /* Label text will be white */
+    margin: 5px 0;
+}
+
+.scoreboard span {
+    color: lightgreen; /* Scores will be green */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Instagram Link Styling */
+.instagram-link {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff; /* White text for Instagram link */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.instagram-link:hover {
+    color: #90ee90; /* Light green on hover */
+}

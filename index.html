@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТиК Так То</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>ТиК Так То</h1> <!-- Title above the player's turn message -->
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+        <p>Играч X победи: <span id="scoreX">0</span></p>
+        <p>Играч O победи: <span id="scoreO">0</span></p>
+        <p>Равенства: <span id="scoreDraw">0</span></p>
+    </div>
+
+    <div class="game-status">
+        <h2 class="status-message" id="statusMessage">Ред на X</h2> <!-- Player's turn below the title -->
+    </div>
+
+    <button id="toggleModeButton">Играй срещу изкуствен интелект</button> <!-- Button to toggle AI mode -->
+
+    <div class="game-board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+
+    <button id="restartButton">РЕСТАРТ</button>
+
+    <!-- Instagram Link -->
+    <a href="https://www.instagram.com/chiler91" target="_blank" class="instagram-link">Instagram: @chiler91</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
